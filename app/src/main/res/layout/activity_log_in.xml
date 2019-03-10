@@ -1,17 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".LogIn"
     android:background="@color/colorAccent"
-    xmlns:android="http://schemas.android.com/apk/res/android" >
-    <EditText
-        android:id="@+id/etName"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="32dp"
-        android:layout_marginRight="32dp"
-        android:hint="Name"
-        android:textSize="24sp"
-        />
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
     <EditText
         android:id="@+id/etEmail"
         android:layout_width="match_parent"
@@ -34,26 +28,17 @@
         android:layout_below="@+id/etEmail"
         android:textSize="24sp"
         />
-    <EditText
-        android:id="@+id/etConfirmPassword"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="32dp"
-        android:layout_marginRight="32dp"
-        android:inputType="textPassword"
-        android:hint="Confirm Password"
-        android:layout_below="@+id/etPassword"
-        android:textSize="24sp"
-        />
+
     <Button
         android:id="@+id/btnRegister"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/etConfirmPassword"
+        android:layout_below="@id/etPassword"
 
-        android:textColor="#FFFFFF"
-        android:hint="REGISTER"
+        android:textColor="#ffffff"
+        android:hint="Log in"
         android:background="@color/colorPrimaryDark"
+        android:textSize="24sp"
         />
 
 </RelativeLayout>
